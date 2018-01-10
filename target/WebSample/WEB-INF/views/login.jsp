@@ -6,7 +6,7 @@
 <head>
     <%@include file="../../common/common_login.jsp" %>
     <title>登录</title>
-    <%--<script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
             $('#backgroundSlider').backgroundSlider({
                 direction: 'slide', //场景动画类型：【in】:拉近;【out】:拉远;【slide】:幻灯片
@@ -17,7 +17,7 @@
 
             }
         });
-    </script>--%>
+    </script>
 </head>
 <body class="login-layout">
 <!-- background -->
