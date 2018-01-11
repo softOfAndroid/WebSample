@@ -10,3 +10,8 @@
 <%-- backgroundSlider --%>
 <link rel="stylesheet" href="${ctx }/resources/backgroundSlider/backgroundSlider.css"/>
 <script type="text/javascript" src="${ctx }/resources/backgroundSlider/backgroundSlider.min.js"></script>
+<%-- 小图标 --%>
+<link rel="stylesheet" href="${ctx}/resources/fonts/font-awesome.min.css" media="all"/>
+
+<%-- 样式 --%>
+<link rel="stylesheet" href="${ctx}/resources/ace/ace.min.css" class="ace-main-stylesheet" id="main-ace-style"/>

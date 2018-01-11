@@ -10,3 +10,6 @@
 <%-- backgroundSlider --%>
 <link rel="stylesheet" href="${ctx }/resources/backgroundSlider/backgroundSlider.css"/>
 <script type="text/javascript" src="${ctx }/resources/backgroundSlider/backgroundSlider.min.js"></script>
+
+<link rel="stylesheet" href="${ctx}/resources/fonts/font-awesome.min.css" media="all"/>
+<link rel="stylesheet" href="${ctx}/resources/ace/ace.min.css" class="ace-main-stylesheet" id="main-ace-style"/>
