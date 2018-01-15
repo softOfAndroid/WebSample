@@ -15,3 +15,12 @@
 
 <%-- 样式 --%>
 <link rel="stylesheet" href="${ctx}/resources/ace/ace.min.css" class="ace-main-stylesheet" id="main-ace-style"/>
+
+<script type="text/javascript" src="${ctx}/resources/customer/login.js"></script>
+
+<script type="text/javascript" type="text/javascript">
+    var sys = sys || {};
+    sys.rootPath = "${ctx}";
+    sys.pageNum = 10;
+    sys.gridStyle = "Bootstrap";
+</script>

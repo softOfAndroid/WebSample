@@ -59,7 +59,7 @@
                                             </span>
                                             </label>
                                             <label class="block clearfix">
-                                                <input id="imagecode" name="imagecode" type="text" class="form-control" placeholder="验证码" style="width:60%;float:left;"/>
+                                                <input id="imagecode" name="imagecode" type="text" class="form-control" placeholder="验证码" style="width:65%;float:left;"/>
                                                 <img id="kaptchaImage" src="${ctx }/resources/images/image.jsp" style="cursor:pointer; margin-left:10px;" title="点击更换"/>
                                             </label>
 
