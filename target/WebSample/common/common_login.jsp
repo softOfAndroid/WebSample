@@ -23,4 +23,4 @@
     sys.rootPath = "${ctx}";
     sys.pageNum = 10;
     sys.gridStyle = "Bootstrap";
-</script> 
+</script>
