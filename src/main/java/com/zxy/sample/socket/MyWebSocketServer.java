@@ -10,7 +10,7 @@ import java.util.Collection;
 public class MyWebSocketServer extends WebSocketServer {
 
 
-    public MyWebSocketServer(int  port) {
+    public MyWebSocketServer(int port) {
         super(new InetSocketAddress(port));
     }
 
@@ -37,7 +37,6 @@ public class MyWebSocketServer extends WebSocketServer {
         String address = webSocket.getRemoteSocketAddress().getAddress().getHostAddress();
         String message = String.format("(%s) %s", address, s);
         System.out.println("接收到消息：" + message);
-        sendMessage("客户端你好");
     }
 
     @Override
@@ -48,12 +47,18 @@ public class MyWebSocketServer extends WebSocketServer {
         e.printStackTrace();
     }
 
-    public void sendMessage(String mess){
+    @Override
+    public void onStart() {
+
+    }
+
+    public void sendMessage(String mess) {
         // 获取所有连接的客户端
-        Collection<WebSocket> collection = connections();
+        Collection<WebSocket> collection = getConnections();
         //发送消息
-        for (WebSocket clent:collection) {
-            clent.send(mess);
+        for (WebSocket clent : collection) {
+            if (clent.isOpen())
+                clent.send(mess);
         }
     }
 }
