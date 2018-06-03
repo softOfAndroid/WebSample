@@ -8,7 +8,6 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.13.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.13.RELEASE" />
@@ -29,6 +28,10 @@
           <element id="library" level="project" name="Maven: org.ow2.asm:asm:5.2" />
           <element id="library" level="project" name="Maven: org.apache.ant:ant:1.9.6" />
           <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.9.6" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.13" />
           <element id="library" level="project" name="Maven: org.java-websocket:Java-WebSocket:1.3.8" />
         </element>
       </element>
