@@ -1,12 +1,11 @@
 package com.zxy.sample.entry;
 
 import java.io.Serializable;
-
 public class ResponseResult<T> implements Serializable {
     /**
      * 响应码
      */
-    private String code;
+    private Integer code;
 
     /**
      * 响应信息
@@ -18,11 +17,11 @@ public class ResponseResult<T> implements Serializable {
      */
     private T data;
 
-    public String getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 

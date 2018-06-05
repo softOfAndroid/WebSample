@@ -1,6 +1,6 @@
 package com.zxy.sample.util;
 
-import com.zxy.sample.common.ResponseCode;
+import com.zxy.sample.common.ResponseEnum;
 import com.zxy.sample.entry.ResponseResult;
 
 public class ResponseResultUtil {
@@ -13,8 +13,8 @@ public class ResponseResultUtil {
      */
     public static ResponseResult success(Object object) {
         ResponseResult responseResult = new ResponseResult();
-        responseResult.setCode(ResponseCode.SUCCESS.getCode());
-        responseResult.setMsg(ResponseCode.SUCCESS.getMsg());
+        responseResult.setCode(ResponseEnum.SUCCESS.getCode());
+        responseResult.setMsg(ResponseEnum.SUCCESS.getMsg());
         responseResult.setData(object);
         return responseResult;
     }
@@ -26,7 +26,7 @@ public class ResponseResultUtil {
      * @param msg
      * @return
      */
-    public static ResponseResult error(String code, String msg) {
+    public static ResponseResult error(Integer code, String msg) {
         ResponseResult responseResult = new ResponseResult();
         responseResult.setCode(code);
         responseResult.setMsg(msg);

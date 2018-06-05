@@ -1,4 +1,4 @@
-package com.zxy.sample.common;
+package com.zxy.sample.exception;
 
 public class NullUtil {
 
@@ -10,7 +10,7 @@ public class NullUtil {
      */
     public static String throwIfBlank(String message, String target){
         if (target == null || target.trim().length() == 0){
-            throw new ExceptionUtil(message);
+            throw new CustomException(message);
         }
         return target;
     }

@@ -1,18 +1,18 @@
 package com.zxy.sample.common;
 
-public enum ResponseCode {
-    SUCCESS("0000", "成功"),
-    ERROR("0001", "失败");
+public enum ResponseEnum {
+    SUCCESS(1000, "成功"),
+    ERROR(1001, "失败");
 
-    private final String code;
+    private final Integer code;
     private final String msg;
 
-    ResponseCode(String code, String msg) {
+    ResponseEnum(Integer code, String msg) {
         this.code = code;
         this.msg = msg;
     }
 
-    public String getCode() {
+    public Integer getCode() {
         return code;
     }
 
