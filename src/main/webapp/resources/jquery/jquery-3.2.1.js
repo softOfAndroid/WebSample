@@ -888,7 +888,7 @@ function Sizzle( selector, context, results, seed ) {
  * Create key-value caches of limited size
  * @returns {function(string, object)} Returns the Object data after storing it on itself with
  *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
- *	deleting the oldest entry
+ *	deleting the oldest bean
  */
 function createCache() {
 	var keys = [];
@@ -4120,7 +4120,7 @@ Data.prototype = {
 		//
 		this.set( owner, key, value );
 
-		// Since the "set" path can have two possible entry points
+		// Since the "set" path can have two possible bean points
 		// return the expected data based on which path was taken[*]
 		return value !== undefined ? value : key;
 	},

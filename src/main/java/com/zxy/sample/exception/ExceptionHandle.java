@@ -1,6 +1,6 @@
 package com.zxy.sample.exception;
 
-import com.zxy.sample.entry.ResponseResult;
+import com.zxy.sample.bean.ResponseResult;
 import com.zxy.sample.util.ResponseResultUtil;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

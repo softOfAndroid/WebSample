@@ -1,8 +1,8 @@
 package com.zxy.sample.server.impl;
 
 import com.zxy.sample.exception.CustomException;
-import com.zxy.sample.dao.SysUserDao;
-import com.zxy.sample.entry.SysUser;
+import com.zxy.sample.db.dao.SysUserDao;
+import com.zxy.sample.db.entry.SysUser;
 import com.zxy.sample.server.SysUserServer;
 import com.zxy.sample.server.base.BaseServerImpl;
 import org.springframework.beans.factory.annotation.Autowired;

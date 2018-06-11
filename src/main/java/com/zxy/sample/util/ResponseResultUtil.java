@@ -1,7 +1,7 @@
 package com.zxy.sample.util;
 
 import com.zxy.sample.common.ResponseEnum;
-import com.zxy.sample.entry.ResponseResult;
+import com.zxy.sample.bean.ResponseResult;
 
 public class ResponseResultUtil {
 

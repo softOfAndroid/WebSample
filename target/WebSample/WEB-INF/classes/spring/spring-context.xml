@@ -9,16 +9,25 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!--扫描业务层组件-->
     <context:component-scan base-package="com.zxy.sample.server"/>
+
+    <!-- 1.配置数据库相关参数properties的属性 -->
+    <context:property-placeholder location="classpath:properties/jdbc.properties"/>
+
     <!--c3p0 数据源-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/sample?serverTimezone=UTC"/>
-        <property name="user" value="root"/>
-        <property name="password" value="root"/>
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
         <property name="minPoolSize" value="10"/>
         <property name="maxPoolSize" value="20"/>
         <property name="initialPoolSize" value="10"/>
-        <property name="acquireIncrement" value="1"/>
+        <!-- 关闭连接后不自动commit -->
+        <property name="autoCommitOnClose" value="false" />
+        <!-- 获取连接超时时间 -->
+        <property name="checkoutTimeout" value="10000" />
+        <!-- 当获取连接失败重试次数 -->
+        <property name="acquireRetryAttempts" value="2" />
     </bean>
 
     <!--配置事务管理器-->
@@ -29,8 +38,13 @@
     <tx:annotation-driven transaction-manager="dataSourceTransactionManager"></tx:annotation-driven>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 注入数据库连接池 -->
         <property name="dataSource" ref="dataSource"></property>
+        <!-- 配置mybatis全局配置文件 -->
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+        <!-- 扫描数据库实体包 使用别名 -->
+        <property name="typeAliasesPackage" value="com.zxy.sample.db.entry"/>
+        <!-- 扫描sql mapper文件 -->
         <property name="mapperLocations">
             <list>
                 <value>classpath:mapper/*.xml</value>
@@ -40,7 +54,7 @@
 
     <!--扫描生成所有的dao层对象-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.zxy.sample.dao"/>
+        <property name="basePackage" value="com.zxy.sample.db.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 

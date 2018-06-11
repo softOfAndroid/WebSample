@@ -1,6 +1,6 @@
-package com.zxy.sample.dao;
+package com.zxy.sample.db.dao;
 
-import com.zxy.sample.entry.SysUser;
+import com.zxy.sample.db.entry.SysUser;
 
 public interface SysUserDao {
 

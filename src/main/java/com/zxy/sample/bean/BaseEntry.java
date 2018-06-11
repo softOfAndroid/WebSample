@@ -1,4 +1,4 @@
-package com.zxy.sample.entry;
+package com.zxy.sample.bean;
 
 import java.io.Serializable;
 

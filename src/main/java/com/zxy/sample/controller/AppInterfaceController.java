@@ -1,8 +1,7 @@
 package com.zxy.sample.controller;
 
-import com.zxy.sample.common.ResponseEnum;
-import com.zxy.sample.entry.ResponseResult;
-import com.zxy.sample.entry.SysUser;
+import com.zxy.sample.bean.ResponseResult;
+import com.zxy.sample.db.entry.SysUser;
 import com.zxy.sample.util.ResponseResultUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

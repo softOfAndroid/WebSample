@@ -1,4 +1,6 @@
-package com.zxy.sample.entry;
+package com.zxy.sample.db.entry;
+
+import com.zxy.sample.bean.BaseEntry;
 
 public class SysUser extends BaseEntry {
     private String account;
