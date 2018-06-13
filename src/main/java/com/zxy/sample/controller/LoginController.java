@@ -20,8 +20,8 @@ public class LoginController {
 
     @RequestMapping("login.html")
     public String login(SysUser sysUser) {
-        System.out.println("sysuer:" + sysUser.getAccount() + "," + sysUser.getPassword());
         SysUser user = userServer.login("admin", "123456");
+
         return "redirect:index";
     }
 }

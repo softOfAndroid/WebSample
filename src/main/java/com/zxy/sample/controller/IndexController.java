@@ -17,11 +17,9 @@ public class IndexController {
         return "index/index";
     }
 
-
     private void test() {
         socketServer = new MyWebSocketServer(2018);
         socketServer.start();
-
     }
 
     @RequestMapping("index/send.action")

@@ -8,10 +8,13 @@ import com.zxy.sample.server.base.BaseServerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 import static com.zxy.sample.exception.NullUtil.$;
 
 @Service
 public class SysUserServerImpl extends BaseServerImpl<SysUser, Integer> implements SysUserServer {
+    @Autowired
     private SysUserDao userDao;
 
     @Override

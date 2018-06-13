@@ -5,7 +5,9 @@
 <link rel="stylesheet" href="${ctx}/resources/bootstrap/css/bootstrap.css"/>
 <link rel="stylesheet" href="${ctx}/resources/bootstrap/css/bootstrap-theme.css"/>
 <script type="text/javascript" src="${ctx}/resources/bootstrap/js/bootstrap.min.js"></script>
-
+<%-- layer --%>
+<link rel="stylesheet" href="${ctx}/resources/layer/theme/default/layer.css">
+<script type="text/javascript" src="${ctx}/resources/layer/layer.js"></script>
 
 <%-- backgroundSlider --%>
 <link rel="stylesheet" href="${ctx }/resources/backgroundSlider/backgroundSlider.css"/>

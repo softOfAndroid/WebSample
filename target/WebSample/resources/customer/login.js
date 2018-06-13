@@ -6,13 +6,13 @@ $(document).ready(function () {
 });
 
 function login() {
-    if ($("#usercode").val() == "") {
-        //layer.alert('请输入账号！', {icon: 5, shift: 6, time: 0});
-        $("#usercode").focus();
+    if ($("#account").val() == "") {
+        layer.alert('请输入账号！', {icon: 5, shift: 6, time: 0});
+        $("#account").focus();
         return false;
     }
     if ($("#password").val() == "") {
-        //layer.alert('请输入密码', {icon: 5, shift: 6, time: 0});
+        layer.alert('请输入密码', {icon: 5, shift: 6, time: 0});
         $("#password").focus();
         return false;
     }
