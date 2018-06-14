@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -48,26 +48,32 @@
                                         <fieldset>
                                             <label class="block clearfix">
                                             <span class="block input-icon input-icon-right">
-                                                <input value="${account}" name="account" id="account" type="text" class="form-control" placeholder="账号"/>
+                                                <input value="${account}" name="account" id="account" type="text"
+                                                       class="form-control" placeholder="账号"/>
                                                 <i class="ace-icon fa fa-user"></i>
                                             </span>
                                             </label>
                                             <label class="block clearfix">
                                             <span class="block input-icon input-icon-right">
-                                                <input value="${password}" name="password" id="password" type="password" class="form-control" placeholder="密码"/>
+                                                <input value="${password}" name="password" id="password" type="password"
+                                                       class="form-control" placeholder="密码"/>
                                                 <i class="ace-icon fa fa-lock"></i>
                                             </span>
                                             </label>
                                             <label class="block clearfix">
-                                                <input id="imagecode" name="imagecode" type="text" class="form-control" placeholder="验证码" style="width:65%;float:left;"/>
-                                                <img id="kaptchaImage" src="${ctx }/resources/images/image.jsp" style="cursor:pointer; margin-left:10px;" title="点击更换"/>
+                                                <input id="imagecode" name="imagecode" type="text" class="form-control"
+                                                       placeholder="验证码" style="width:65%;float:left;"/>
+                                                <img id="kaptchaImage" src="${ctx }/resources/images/image.jsp"
+                                                     style="cursor:pointer; margin-left:10px;" title="点击更换"/>
                                             </label>
 
                                             <div class="space"></div>
 
                                             <div class="clearfix">
-                                                <button onclick="login();" type="button" class="width-35 pull-right btn btn-sm btn-primary">
-                                                    <i class="ace-icon fa fa-key"></i> <span class="bigger-110">登录</span>
+                                                <button onclick="login();" type="button"
+                                                        class="width-35 pull-right btn btn-sm btn-primary">
+                                                    <i class="ace-icon fa fa-key"></i> <span
+                                                        class="bigger-110">登录</span>
                                                 </button>
                                             </div>
 

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class AppInterfaceController {
 
-    @RequestMapping("loin/user")
+    @RequestMapping("login/user")
     @ResponseBody
     public ResponseResult test(){
         SysUser sysUser = new SysUser();
