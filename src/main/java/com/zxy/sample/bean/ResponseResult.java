@@ -1,6 +1,7 @@
 package com.zxy.sample.bean;
 
 import java.io.Serializable;
+
 public class ResponseResult<T> implements Serializable {
     /**
      * 响应码
@@ -39,5 +40,14 @@ public class ResponseResult<T> implements Serializable {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "ResponseResult{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                ", data=" + data +
+                '}';
     }
 }

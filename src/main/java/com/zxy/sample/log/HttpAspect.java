@@ -17,7 +17,7 @@ public class HttpAspect {
 
     public final static Logger logger = LoggerFactory.getLogger(HttpAspect.class);
 
-    @Pointcut("execution(public * com.zxy.sample.controller.*(..))")
+    @Pointcut("execution(public * com.zxy.sample.controller.*.*(..))")
     public void log() {
 
     }

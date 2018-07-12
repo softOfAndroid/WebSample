@@ -13,8 +13,8 @@ public class IndexController {
 
     @RequestMapping("index")
     public String indexView() {
-        test();
-        return "index/index";
+        //test();
+        return "redirect:wx";//"index/index";
     }
 
     private void test() {
